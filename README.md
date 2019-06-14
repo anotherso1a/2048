@@ -1,4 +1,4 @@
 # 2048
 
-## 打开index.html即可
+## 下载后打开index.html即可
 

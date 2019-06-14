@@ -1,12 +1,9 @@
 function init() {
   let grid = initGrid()
   let game = new Game('.box', grid)
-  game.addItemMethod(16)
+  game.addItemMethod(2)
   listenTouchMove(game)
 }
-window.onload = init
-
-
 class Game {
   constructor(selector, Grid) {
     this.Grid = Grid
@@ -179,4 +176,6 @@ function listenTouchMove(game) {
   document.addEventListener('touchstart', start)
   document.addEventListener('touchend', end)
 }
-// listenTouchMove()
+
+
+window.onload = init

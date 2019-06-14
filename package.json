@@ -1,0 +1,23 @@
+{
+  "name": "2048",
+  "version": "1.0.0",
+  "description": "2048",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anotherso1a/2048.git"
+  },
+  "keywords": [
+    "2048",
+    "游戏"
+  ],
+  "author": "AnotherSola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anotherso1a/2048/issues"
+  },
+  "homepage": "https://github.com/anotherso1a/2048#readme"
+}

@@ -47,7 +47,6 @@ html {
   align-items: center;
   width: 80%;
   height: 80%;
-  font-size: 35px;
   font-weight: 700;
   border-radius: 10%;
 }
@@ -113,6 +112,24 @@ html {
 }
 
 .t2048 {
+  color: #f9f6f2;
+  background: #edc22e;
+  font-size: 15px;
+}
+
+.t4096 {
+  color: #f9f6f2;
+  background: #edc22e;
+  font-size: 15px;
+}
+
+.t8192 {
+  color: #f9f6f2;
+  background: #edc22e;
+  font-size: 15px;
+}
+
+.t16384 {
   color: #f9f6f2;
   background: #edc22e;
   font-size: 15px;

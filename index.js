@@ -42,6 +42,10 @@ class Game {
   animate() { //动画
     this.Grid.forEach((e, i) => {
       if (e.instance) {
+        if (e.instance.value >= 2048) { //2048 特殊处理一下
+          this.Doms[i].children[0].classList.add('swing', 'animated')
+          e.instance.appear = 'animated'
+        }
         switch (e.instance.appear) {
           case 'new':
             this.Doms[i].children[0].classList.add('zoomIn', 'animated')
@@ -154,10 +158,12 @@ class Game {
 function listenTouchMove(game) {
   let x, y
   let start = e => {
+    e.preventDefault()
     x = e.touches[0].screenX
     y = e.touches[0].screenY
   }
   let end = e => {
+    e.preventDefault()
     let dx = x - e.changedTouches[0].screenX,
       dy = y - e.changedTouches[0].screenY
 
@@ -175,6 +181,7 @@ function listenTouchMove(game) {
   }
   document.addEventListener('touchstart', start)
   document.addEventListener('touchend', end)
+  document.addEventListener('touchmove', e => e.preventDefault())
 }
 
 
